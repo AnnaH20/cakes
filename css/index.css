@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+:root {
+    font-family: 'Work Sans', sans-serif;
+    --main-color: black;
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+header nav ul a {
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 10px 5px;
+    font-size: 1.2rem;
+}
+header nav ul a:hover {
+    border: 1px solid lightgrey;
+}
