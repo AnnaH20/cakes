@@ -73,38 +73,40 @@
     </section>
     <section>
         <h2>Замовлення</h2>
-        <form method="POST" action="https://formspree.io/moqjlbpk">
+        <form method="POST" action="https://formspree.io/moqjlbpk" class="order">
         <fieldset>
-            <p>
-                <label for="your-name">Прізвище, ім'я</label>
-                <input type="text" name="your-name" id="your-name">
-            </p>
-            <p>
-                <label for="delivery">Адреса доставки</label>
-                <input type="text" name="delivery" id="delivery">
-            </p>
-            <p>
-                <label for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone">
-            </p>
-            <p>
-                <label for="cakes">Оберіть торт</label>
-                <select id="cakes" name="cakes">
-                    <option value="Спартак">Спартак</option>
-                    <option value="Малиновий чізкейк">Малиновий чізкейк</option>
-                    <option value="Пташине молоко">Пташине молоко</option>
-                    <option value="Ванільний">Ванільний</option>
-                    <option value="Персиковий чізкейк">Персиковий чізкейк</option>
-                    <option value="Шоколадний">Шоколадний</option>
-                    <option value="Яблучний">Яблучний</option>
-                    <option value="Горіховий">Горіховий</option>
-                </select>
-            </p>
-             <p>
-                <label for="comment">Коментар</label>
-                <textarea name="comment" id="comment"></textarea>
-            </p>
-            <input type="submit" value="Замовити">
+            <div class="fields">
+                <p>
+                    <label for="your-name">Прізвище, ім'я</label>
+                    <input type="text" name="your-name" id="your-name">
+                </p>
+                <p>
+                    <label for="delivery">Адреса доставки</label>
+                    <input type="text" name="delivery" id="delivery">
+                </p>
+                <p>
+                    <label for="phone">Телефон</label>
+                    <input type="tel" name="phone" id="phone">
+                </p>
+                <p>
+                    <label for="cakes">Оберіть торт</label>
+                    <select id="cakes" name="cakes">
+                        <option value="Спартак">Спартак</option>
+                        <option value="Малиновий чізкейк">Малиновий чізкейк</option>
+                        <option value="Пташине молоко">Пташине молоко</option>
+                        <option value="Ванільний">Ванільний</option>
+                        <option value="Персиковий чізкейк">Персиковий чізкейк</option>
+                        <option value="Шоколадний">Шоколадний</option>
+                        <option value="Яблучний">Яблучний</option>
+                        <option value="Горіховий">Горіховий</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="comment">Коментар</label>
+                    <textarea name="comment" id="comment" rows="4"></textarea>
+                </p>
+            </div>
+            <input type="submit" value="Замовити" class="submit-button">
         </fieldset>
         </form>
     </section>
