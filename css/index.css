@@ -31,3 +31,46 @@ header nav ul a {
 header nav ul a:hover {
     border: 1px solid lightgrey;
 }
+.main-article .banner {
+    background-image: url(../img/main.jpg);
+    background-position: top;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.main-article .banner h1 {
+    color:white;
+    font-size: 2rem;
+}
+section h2 {
+    text-align: center;
+}
+.catalog article {
+    padding: 5px;
+}
+.catalog article img {
+    width: 100%;
+    display: block;
+}
+@media (min-width: 500px) {
+    .catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .catalog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .catalog{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
