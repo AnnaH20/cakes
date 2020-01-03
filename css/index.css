@@ -11,9 +11,15 @@ body {
 }
 header nav ul {
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+@media (min-width: 500px) {
+    header nav ul {
+        flex-direction: row;
+    }
 }
 header nav ul li {
     display: block;
@@ -74,12 +80,17 @@ section h2 {
 }
 .order .fields {
     width: 70%;
-    margin: 0 auto 10px;;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 15px;
+    margin: 0 auto 10px;
     text-align: left;
 }
+@media (min-width: 500px) {
+    .order .fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 15px;
+    }
+}
+
 .order .fields p {
     margin: 0;
 }
@@ -94,11 +105,37 @@ section h2 {
 }
 .order label {
     display: block;
-    padding-bottom: 3px;
+    padding: 5px 0 3px;
 }
 .order .submit-button {
     padding: 8px 30px;
     font-size: 1.2rem;
     border: 1px solid black;
     background-color: #e6e6e6;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contacts p,
+.contacts img {
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 500px) {
+    .contacts {        
+        flex-direction: row;
+    }
+    .contacts p {
+        width: 40%;
+    }
+    .contacts img {
+        width: 60%;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px 30px;
+    background-color: #f7fade;
 }
