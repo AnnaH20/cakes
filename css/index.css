@@ -56,6 +56,10 @@ section h2 {
 }
 .catalog article {
     padding: 5px;
+    text-align: center;
+}
+.catalog aricle p {
+    text-align: left;
 }
 .catalog article img {
     width: 100%;
@@ -102,6 +106,9 @@ section h2 {
 .order .fields select,
 .order .fields textarea {
     width: 100%;
+}
+.order .fields select {
+    height: 150px;
 }
 .order label {
     display: block;
