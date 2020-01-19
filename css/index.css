@@ -9,6 +9,12 @@ body {
     max-width: 980px;
     margin: auto;
 }
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
 header nav ul {
     display: flex;
     flex-direction: column;
@@ -145,4 +151,17 @@ footer {
     margin-top: 30px;
     padding: 20px 30px;
     background-color: #f7fade;
+}
+
+.added-message {
+    padding-top: 10px;
+    color: green;
+    font-style: italic;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
